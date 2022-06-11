@@ -33,7 +33,7 @@ public class VeiculoController {
 
     @GetMapping(value = "/lista")
     public ResponseEntity<List<VeiculoResponse>> compute(@RequestParam("preço") BigDecimal preco, @RequestParam("consumo na cidade") float cidade, @RequestParam("consumo na rodovia") float rodovia) {
-        List<VeiculoResponse> dto = veiculoService.compute(preco, (long) cidade, (long) rodovia);
+        List<VeiculoResponse> dto = veiculoService.compute(preco, cidade, rodovia);
 
         return new ResponseEntity<>(dto, HttpStatus.OK);
     }

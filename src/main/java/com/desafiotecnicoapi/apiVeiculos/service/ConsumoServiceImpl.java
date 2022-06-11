@@ -14,7 +14,7 @@ public class ConsumoServiceImpl implements ConsumoService {
 
 
     @Override
-    public BigDecimal computeUso(BigDecimal distancia, BigDecimal consumoMedio) {
+    public float computeUso(BigDecimal distancia, BigDecimal consumoMedio) {
         return distancia / consumoMedio;
     }
 }

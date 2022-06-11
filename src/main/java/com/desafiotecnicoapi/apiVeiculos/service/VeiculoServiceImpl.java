@@ -16,9 +16,7 @@ import java.util.stream.Collectors;
 public class VeiculoServiceImpl implements VeiculoService {
 
     private final VeiculoRepository veiculoRepository;
-
     private final VeiculoMapper veiculoMapper;
-
     private final ConsumoService consumoService;
 
     public VeiculoServiceImpl(VeiculoRepository veiculoRepository, VeiculoMapper veiculoMapper,

@@ -11,5 +11,7 @@ public interface VeiculoService {
 
         VeiculoResponse insert(Veiculo veiculo);
         List<VeiculoResponse> compute(BigDecimal preco, BigDecimal cidade, BigDecimal rodovia);
-    }
+
+    List<VeiculoResponse> compute(BigDecimal preco, float cidade, float rodovia);
+}
 

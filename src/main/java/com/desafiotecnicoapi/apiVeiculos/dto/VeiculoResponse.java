@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 
-public class VeiculoResponse {
+public class VeiculoResponse implements Comparable {
 
 
     private UUID id;
@@ -79,7 +79,7 @@ public class VeiculoResponse {
         return total;
     }
 
-    public void setTotal(Float total) {
+    public static void setTotal(Float total) {
         this.total = total;
     }
 
